@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070E20">
+<title>يوني ليغ</title>
+<meta name="description" content="العب مع الحلقة: تطبيق برنامج يوني ليغ. مباشر ومحاكاة ومجلس التراث.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="bg" aria-hidden="true">
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <div class="floor"><i></i></div>
+  <div class="dust">
+    <i style="--x:8%;--y:18%;--s:7px;--d:7s;--k:-26"></i><i style="--x:86%;--y:12%;--s:5px;--d:9s;--k:22"></i><i style="--x:22%;--y:42%;--s:4px;--d:6s;--k:-12"></i>
+    <i style="--x:74%;--y:36%;--s:8px;--d:8s;--k:30"></i><i style="--x:48%;--y:8%;--s:4px;--d:10s;--k:-18"></i><i style="--x:92%;--y:58%;--s:6px;--d:7.5s;--k:16"></i>
+    <i style="--x:12%;--y:66%;--s:6px;--d:9.5s;--k:-30"></i><i style="--x:58%;--y:52%;--s:3px;--d:6.5s;--k:10"></i><i style="--x:34%;--y:78%;--s:5px;--d:8.5s;--k:24"></i>
+  </div>
+</div>
+<div id="app">
+  <main id="view" aria-live="polite"></main>
+  <nav id="dock" hidden aria-label="التنقل">
+    <a href="#/home" data-r="home"><i></i>الرئيسية</a>
+    <a href="#/sim" data-r="sim"><i></i>العب</a>
+    <a href="#/heritage" data-r="heritage"><i></i>التراث</a>
+    <a href="#/rank" data-r="rank"><i></i>الترتيب</a>
+  </nav>
+  <div id="toast" role="status"></div>
+  <div id="modal" hidden></div>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
